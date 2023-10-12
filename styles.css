@@ -79,7 +79,7 @@ nav a:hover {
 
 /* CSS voor de slideshow-container */
 .slideshow-container {
-    max-height: 20px;
+    max-height: 200px;
     overflow: hidden; /* Voeg een overflow eigenschap toe om eventuele overschrijding van de maximale hoogte te verbergen */
     position: relative;
 }
