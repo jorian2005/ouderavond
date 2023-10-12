@@ -58,7 +58,7 @@ function showSlides() {
         slideIndex = 1;
     }
     slides[slideIndex - 1].style.display = 'block';
-    setTimeout(showSlides, 3000); // Wijzig afbeelding elke 3 seconden (3000 ms)
+    setTimeout(showSlides, 300); // Wijzig afbeelding elke 3 seconden (3000 ms)
 }
 
 function changeSlide(n) {
