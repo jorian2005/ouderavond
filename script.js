@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 let slideIndex = 0;
 
 function showSlides() {
-    const slides = document.querySelectorAll('.slideshow-image');
+    const slides = document.querySelectorAll('.slideshow-image fade');
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
     }
