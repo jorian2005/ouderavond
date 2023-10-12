@@ -1,0 +1,87 @@
+/* Algemene opmaak */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+    background-color: #333;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    /* Voeg een overgangseffect toe voor kleurverandering */
+}
+
+/* Secties */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Agenda en sprekerslijst opmaken */
+ul {
+    padding-left: 20px;
+}
+
+/* Contactgegevens */
+address {
+    margin-top: 10px;
+    font-style: normal;
+}
+
+/* Responsive opmaak */
+@media screen and (max-width: 600px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+nav a:hover {
+    color: #ff9900;
+    /* Hier kun je de gewenste kleur aanpassen */
+}
+
+.agenda-list {
+        list-style-type: none;
+}
+
+/* CSS voor de slideshow-container */
+.slideshow-container {
+    max-height: 500px;
+    overflow: hidden; /* Voeg een overflow eigenschap toe om eventuele overschrijding van de maximale hoogte te verbergen */
+    position: relative;
+}
+
+
