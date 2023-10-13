@@ -1,87 +1,173 @@
-/* Algemene opmaak */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
 }
 
 header {
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+    position: relative;
     text-align: center;
+    background: url('fotos/Header.jpg');
+    background-size: cover;
 }
 
-h1 {
-    margin: 0;
+header img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    max-width: 100%;
+    height: 200px;
+    margin-top: 0px;
+    /* Voegt ruimte boven de afbeelding toe */
+
+}
+
+#Jorian {
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3ca4ff;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(60, 164, 255, 0.8);
+    /* Achtergrond met lichte transparantie */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Licht schaduweffect */
+}
+
+header h1 {
+    text-align: center;
+    /* Centreert de titel horizontaal */
+    font-size: 24px;
+    margin-bottom: 20px;
+    /* Voegt wat ruimte onder de titel toe */
+}
+
+#HeaderLogo {
+    padding-left: 0px;
+    left: 0px;
+    height: 75px;
+    width: 250px;
+    position: fixed;
+    z-index: 999;
+}
+
+.Logo {
+
+    z-index: 99;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 20px;
-    background-color: #333;
-    text-align: center;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Plaatst menu-items naast elkaar */
+    justify-content: center;
+    /* Centreert horizontaal */
 }
 
 nav li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-    /* Voeg een overgangseffect toe voor kleurverandering */
-}
-
-/* Secties */
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Agenda en sprekerslijst opmaken */
-ul {
-    padding-left: 20px;
-}
-
-/* Contactgegevens */
-address {
-    margin-top: 10px;
-    font-style: normal;
-}
-
-/* Responsive opmaak */
-@media screen and (max-width: 600px) {
-    nav ul {
-        text-align: center;
-    }
-
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
-}
-
-nav a:hover {
-    color: #ff9900;
-    /* Hier kun je de gewenste kleur aanpassen */
-}
-
-.agenda-list {
-        list-style-type: none;
-}
-
-/* CSS voor de slideshow-container */
-.slideshow-container {
-    max-height: 200px;
-    overflow: hidden; /* Voeg een overflow eigenschap toe om eventuele overschrijding van de maximale hoogte te verbergen */
+    margin-right: 20px;
+    /* Ruimte tussen menu-items */
     position: relative;
 }
 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+    text-transform: none;
+    /* Laat de tekst zoals het is */
+}
 
+nav a:hover {
+    color: 333;
+}
+
+nav .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #3ca4ff;
+    list-style: none;
+    padding: 0;
+}
+
+nav .parent:hover .sub-menu {
+    display: block;
+    top: 100%;
+    left: 0;
+}
+
+nav a:hover {
+    color: #f0f0f0;
+}
+
+.sidebar {
+    padding: 10px;
+    background-color: #fff;
+    float: right;
+    width: 15%;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.sidebar a:hover {
+    color: #ea4e3c;
+}
+
+.content {
+    display: flex;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    position: absolute;
+    background-color: #3ca4ff;
+    width: 100%;
+    margin-top: auto;
+}
+
+th,
+tr #FooterTable {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#Sfeerbeelden img {
+    width: 500px;
+}
+
+.page-not-found__content {
+    text-align: center;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.box {
+    background-color: #fff;
+}
+
+
+#Plattegrond {
+    display: block;
+    font-size: 16px;
+    font-family: IBM Plex Sans,sans-serif;
+    line-height: 1.6;
+    color: #232323;
+}
