@@ -19,7 +19,6 @@ header img {
     max-width: 100%;
     height: 200px;
     margin-top: 0px;
-    /* Voegt ruimte boven de afbeelding toe */
 
 }
 
@@ -36,17 +35,13 @@ nav {
     padding: 20px;
     border-radius: 5px;
     background: rgba(60, 164, 255, 0.8);
-    /* Achtergrond met lichte transparantie */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Licht schaduweffect */
 }
 
 header h1 {
     text-align: center;
-    /* Centreert de titel horizontaal */
     font-size: 24px;
     margin-bottom: 20px;
-    /* Voegt wat ruimte onder de titel toe */
 }
 
 #HeaderLogo {
@@ -67,14 +62,11 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    /* Plaatst menu-items naast elkaar */
     justify-content: center;
-    /* Centreert horizontaal */
 }
 
 nav li {
     margin-right: 20px;
-    /* Ruimte tussen menu-items */
     position: relative;
 }
 
@@ -84,7 +76,6 @@ nav a {
     transition: color 0.3s;
     font-weight: bold;
     text-transform: none;
-    /* Laat de tekst zoals het is */
 }
 
 nav a:hover {
@@ -167,7 +158,7 @@ tr #FooterTable {
 #Plattegrond {
     display: block;
     font-size: 16px;
-    font-family: IBM Plex Sans,sans-serif;
+    font-family: IBM Plex Sans, sans-serif;
     line-height: 1.6;
     color: #232323;
 }
